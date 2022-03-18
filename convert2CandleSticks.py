@@ -68,7 +68,7 @@ def conv2CandleStcks(read_path, save_path, time_intervals):
 read_dir = "./data/Tst"
 save_dir = './clean_data/Tst'
 read_postfix = 'tapes.csv'
-time_intervals = 15*60
+time_intervals = 15
 save_postfix = 'candlesticks'+str(time_intervals)+'.csv'
 except_file_data = [
     '2022-01-08',
