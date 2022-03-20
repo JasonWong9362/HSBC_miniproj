@@ -93,6 +93,7 @@ dti = pd.date_range("2022-01-04", periods=60, freq="D")
 dti = pd.to_datetime(dti).date
 dti = np.setdiff1d(dti, except_file_data)  # remove except_file_data
 
+
 read_path_sets = [read_dir + str(date) + read_postfix for date in dti]
 save_path_sets = [save_dir + str(date) + save_postfix for date in dti]
 
