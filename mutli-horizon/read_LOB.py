@@ -131,8 +131,8 @@ def read_data(data_path, count, ks, up_threshold, down_threshold):
 
     # LOB
     train_test_split_id = int(LOBs_array.shape[0] * 0.7)
-    train_lob = LOBs_array[:train_test_split_id, :20]
-    test_lob = LOBs_array[train_test_split_id + 1:, :20]
+    train_lob = LOBs_array[:train_test_split_id, : count*4]
+    test_lob = LOBs_array[train_test_split_id + 1:, : count*4]
 
     # label
     label = LOBs_array[:, -len(ks):]
